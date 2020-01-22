@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FuckDM.CharacterPage">
+    <!--Pages can be added as references or inline-->
+   <ContentPage Title="Tab 1" >
+
+       <ContentPage.Resources>
+
+            <ResourceDictionary x:Name="AppDictionary">
+
+                <Color x:Key="BackgroundCol">#FFFFFF</Color>
+
+                <Color x:Key="BorderCol">#E1E1E1</Color>
+
+                <Style x:Key="InternalViewStyle" TargetType="ContentView">
+
+                    <Setter Property="BackgroundColor" Value="{StaticResource BackgroundCol}"/>
+
+                    <Setter Property="VerticalOptions" Value="Fill"/>
+
+                    <Setter Property="Padding" Value="10,10,10,10"></Setter>
+
+                </Style>
+
+                <Style x:Key="BorderStyle" TargetType="ContentView">
+
+                    <Setter Property="BackgroundColor" Value="{StaticResource BorderCol}"/>
+
+                    <Setter Property="Padding" Value="3,1,1,3"></Setter>
+
+                </Style>
+
+            </ResourceDictionary>
+
+        </ContentPage.Resources>
+            
+         <ContentView Padding="20" VerticalOptions="Start" >
+
+                <ContentView Style="{StaticResource BorderStyle}" >
+
+                    <ContentView Style="{StaticResource InternalViewStyle}">
+
+                    <Label Text="I want a border here!"
+
+                    FontSize="20" TextColor="Black"
+
+                    HorizontalOptions="Center"></Label>
+
+                </ContentView>
+
+        </ContentView>
+
+    </ContentView>
+    </ContentPage>
+    <ContentPage Title="Tab 2" >
+
+        <BoxView BackgroundColor="Blue"></BoxView>
+    </ContentPage>
+    <ContentPage Title="Tab 3" >
+
+        <BoxView BackgroundColor="Red"></BoxView>
+    </ContentPage>
+
+</TabbedPage>

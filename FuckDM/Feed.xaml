@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FuckDM.Feed">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="dragon.png"/>
+            <Label HorizontalTextAlignment="Center">Welcome to my Dungeons and Dragons app</Label>
+            <Button Text="about this app" Clicked="Click"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

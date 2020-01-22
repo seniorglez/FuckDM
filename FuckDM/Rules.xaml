@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="FuckDM.Rules">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Text="Monster Manual" Clicked="Click"/>
+            <Button Text="Dungeons Master's Guide" Clicked="Click"/>
+            <Button Text="Player's Handbook" Clicked="Click"/>
+            <Button Text="Unearthed Arcana" Clicked="Click"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
